@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', serif;
+}
+body{
+    background: #191717;
+}
+.quote-box{
+    background: #CCC8AA;
+    width: 700px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px #040D12;
+}
+.quote-box h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.quote-box h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 4px;
+    background: #040D12;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.quote-box blockquote{
+    font-size: 28px;
+    min-height: 110px;
+}
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content: '"';
+}
+.quote-box span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+.quote-box span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: #040D12;
+    position: absolute;
+    top: 50%;
+    left: -30%;
+}
+.quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.quote-box button{
+    cursor: pointer;
+    background: #040D12;
+    color: #CCC8AA;
+    border: 1px solid #191717;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    display: flex;
+    border-radius: 25px;
+}
+.quote-box button:nth-child(1){
+    background: transparent;
+    color: #040D12;
+}
+.quote-box button:nth-child(1):hover{
+    background: #040D12;
+    color: #CCC8AA;
+    transition: all 0.3s linear;
+}
+.quote-box button:nth-child(2):hover{
+    background: #337CCF;
+    transition: all 0.3s linear;
+}
